@@ -23,8 +23,7 @@ let pinAnswer = await inquirer.prompt(
 ]
 )
 if (pinAnswer.pin === myPin){
-    console.log(chalk.blackBright.italic("\npin is correct, Login Sucessfully!!\n"));
-    console.log(chalk.blackBright.italic(`current account balance is ${myBalance}`))
+    console.log(chalk.blackBright.italic("\npin number is correct, Login Sucessfully!!\n"));
 
     //___Print Operations___
 
@@ -41,7 +40,7 @@ if (pinAnswer.pin === myPin){
     //___Withdraw Method___
  if(operationAns.operation === "Withdraw Amount"){
     let withdrawAns = await inquirer.prompt(
-        [      {
+ [       {
           name: "withdrawMethod",
           type: "list",
           message: chalk.green("Select withdraw method"),
