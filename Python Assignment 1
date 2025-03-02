@@ -1,0 +1,451 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyO99+JCImJpkOv1ITPk+RG/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Niba-khan/ATM_MACHIME/blob/main/Python%20Assignment%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "97JogCKSOeCQ"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Assignment No 1**\n",
+        "\n",
+        "*Part 1: Understanding String Literals*\n",
+        "1. Create three different strings using each type of quotation:\n",
+        "o Single quotes ('example')\n",
+        "o Double quotes (\"example\")\n",
+        "o Triple quotes (\"\"\"example\"\"\")\n",
+        "2. Explain in your own words: What is the advantage of each type of quotation?\n",
+        "3. Write a string that contains both single and double quotes inside it. Example: She said,\n",
+        "\"I'm going to the store.\"\n",
+        "4. Create a multi-line string using triple quotes that describes your favorite hobby."
+      ],
+      "metadata": {
+        "id": "7QMs6cRnOlkb"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# New Section"
+      ],
+      "metadata": {
+        "id": "LxmXe30qRgUP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1: Create three different strings using each type of quotation: o Single quotes ('example') o Double quotes (\"example\") o Triple quotes (\"\"\"example\"\"\")\n",
+        "single_quote = 'This is me niba khan'\n",
+        "double_quote = \"I am learn to python\"\n",
+        "triple_quote = \"\"\"Python is a high-level, interpreted, and general-purpose programming language. It is best for both beginners and professionals because its syntax is simple and readable.\"\"\"\n",
+        "\n",
+        "print(single_quote)\n",
+        "print(double_quote)\n",
+        "print(triple_quote)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5ZSNS0PgPA2i",
+        "outputId": "bb1de603-9214-44cf-8986-e28f20758912"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "This is me niba khan\n",
+            "I am learn to python\n",
+            "Python is a high-level, interpreted, and general-purpose programming language. It is best for both beginners and professionals because its syntax is simple and readable.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " #2:Explain in your own words: What is the advantage of each type of quotation?\n",
+        "\n",
+        " **Single Quotes**: *Single quotes are used for short and simple strings. They keep the code clean, reduce the need for escape characters, and make typing faster. *\n",
+        "\n",
+        " **Double Quotes**: *It easily handles apostrophes ('), like \"It's a sunny day!\" whereas single quotes might cause an error.*\n",
+        "\n",
+        " **Triple Quotes**: *Perfect for writing multi-line strings.\n",
+        "You can include both single and double quotes inside the string, and it's useful for writing long texts like stories, novels, or hobbies.*"
+      ],
+      "metadata": {
+        "id": "29dOI1xAkh6l"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "quotes = \"It's a wonderful day!\"\n",
+        "print(quotes)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qbnb9ZSemHFR",
+        "outputId": "2fd1e9a4-af46-4c02-b3f7-ca51a15a90ae"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "It's a wonderful day!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myHobbies = \"\"\"I love art, especially drawing.\n",
+        "In my free time, I enjoy creating different sketches and experimenting with new designs.\n",
+        "Apart from art, I also love coding—it allows me to bring my creative ideas to life!\n",
+        "Both art and coding keep me inspired and excited every day.\"\"\"\n",
+        "\n",
+        "print(myHobbies)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pL5y1qEAmlLg",
+        "outputId": "4d20dca0-c4b8-4adb-e4be-ec9aa266b0e0"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I love art, especially drawing.\n",
+            "In my free time, I enjoy creating different sketches and experimenting with new designs.\n",
+            "Apart from art, I also love coding—it allows me to bring my creative ideas to life!\n",
+            "Both art and coding keep me inspired and excited every day.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Part 2: String Methods Practice**\n",
+        "\n",
+        "*1. Create a variable full_name with your full name (first and last name). Then write code\n",
+        "to:\n",
+        "o Print your name in all uppercase letters\n",
+        "o Print your name in all lowercase letters\n",
+        "o Print your name with the first letter of each name capitalized\n",
+        "2. Create a variable messy_text = \" Python programming is fun! \" Then write code\n",
+        "to:\n",
+        "o Remove all the extra spaces at the beginning and end\n",
+        "o Replace \"fun\" with \"amazing\"\n",
+        "o Count how many times the letter 'i' appears\n",
+        "3. Create a variable sentence = \"The quick brown fox jumps over the lazy dog\"\n",
+        "Then write code to:\n",
+        "o Split this sentence into a list of words\n",
+        "o Join the words back together with dashes between them\n",
+        "o Check if the sentence starts with \"The\"\n",
+        "o Find the position of the word \"fox\" *"
+      ],
+      "metadata": {
+        "id": "E2NC3P6Gm7fN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1:. Create a variable full_name with your full name (first and last name). Then write code to: o Print your name in all uppercase letters o Print your name in all lowercase letters o Print your name with the first letter of each name capitalized\n",
+        "\n",
+        "full_name:str = \"Niba khan\"\n",
+        "\n",
+        "print(full_name.upper())\n",
+        "print(full_name.lower())\n",
+        "print(full_name.title())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uqJa3dF7nPDo",
+        "outputId": "2a636d62-0251-4f2d-bece-6cf4213a76a8"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "NIBA KHAN\n",
+            "niba khan\n",
+            "Niba Khan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2:Create a variable messy_text = \" Python programming is fun! \" Then write code to: o Remove all the extra spaces at the beginning and end o Replace \"fun\" with \"amazing\" o Count how many times the letter 'i' appears\n",
+        "\n",
+        "messy_text:str = \"Python is an amazing Programming language\"\n",
+        "\n",
+        "print(messy_text.strip())\n",
+        "print(messy_text.replace(\"amazing\", \"fantastic\"))\n",
+        "print(messy_text.count(\"i\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GQZpwKgWn4a6",
+        "outputId": "c95e52da-aa16-402b-c158-574a92abc7a5"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python is an amazing Programming language\n",
+            "Python is an fantastic Programming language\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3: Create a variable sentence = \"The quick brown fox jumps over the lazy dog\" Then write code to: o Split this sentence into a list of words o Join the words back together with dashes between them o Check if the sentence starts with \"The\" o Find the position of the word \"fox\"\n",
+        "\n",
+        "sentence = \"The quick brown fox jumps over the lazy dog\"\n",
+        "\n",
+        "print(sentence.split())\n",
+        "print(\"-\".join(sentence.split()))\n",
+        "print(sentence.startswith(\"The\"))\n",
+        "print(sentence.find(\"fox\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IREZHRFAobmZ",
+        "outputId": "1392ae99-150a-40e1-abc6-cdfb23020ab7"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']\n",
+            "The-quick-brown-fox-jumps-over-the-lazy-dog\n",
+            "True\n",
+            "16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Part 3: F-Strings**\n",
+        " *1. Create variables for:\n",
+        "o Your name\n",
+        "o Your age\n",
+        "o Your favorite programming language\n",
+        "Then use f-strings to create these sentences:\n",
+        "\n",
+        "o \"My name is {your_name} and I am {your_age} years old.\"\n",
+        "o \"I enjoy programming in {language}, it's my favorite!\"\n",
+        "o Create a math expression inside an f-string: \"In 5 years, I will be {age + 5} years\n",
+        "old.\" *"
+      ],
+      "metadata": {
+        "id": "secpA7OCpDph"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1:  Create variables for: o Your name o Your age o Your favorite programming language.\n",
+        "\n",
+        "my_name:str = \"Niba khan\"\n",
+        "my_age:int =  19\n",
+        "favorite_language = \"Typescript\"\n",
+        "\n",
+        "#Then use f-strings to create these sentences:o \"My name is {your_name} and I am {your_age} years old.\" o \"I enjoy programming in {language}, it's my favorite!\" o Create a math expression inside an f-string: \"In 5 years, I will be {age + 5} years old.\"\n",
+        "\n",
+        "print(f\"My name is {my_name} and I am {my_age} years old.\")\n",
+        "print(f\"I enjoy programming in {favorite_language}, it's my favorite!\")\n",
+        "print(f\"In 5 years, I will be {my_age + 5} years old.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uBMmzOiFpbse",
+        "outputId": "9b23ff1e-20ea-4ffe-aff0-b58a72f374e0"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is Niba khan and I am 19 years old.\n",
+            "I enjoy programming in Typescript, it's my favorite!\n",
+            "In 5 years, I will be 24 years old.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Part 4: Combining String Methods with F-Strings**\n",
+        "\n",
+        "*1. Asks for user input about their first name, last name, and birth year\n",
+        "2. Uses string methods to properly capitalize their name\n",
+        "3. Uses f-strings to create a profile message: \"Profile: {First Last}, Age: {calculated age},\n",
+        "Username: {first initial + last name + birth year}\"*"
+      ],
+      "metadata": {
+        "id": "gHIcjjfHq4d_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1:Asks for user input about their first name, last name, and birth year\n",
+        "first_name = input(\"Enter your first name: \")\n",
+        "last_name = input(\"Enter your last name: \")\n",
+        "birth_year = int(input(\"Enter your birth year: \"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MZ8tq6cBrHSi",
+        "outputId": "12187884-75e9-4998-87d1-23e63816d415"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter your first name: niba\n",
+            "Enter your last name: khan\n",
+            "Enter your birth year: 2006\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2: Uses string methods to properly capitalize their name\n",
+        "\n",
+        "first_name = first_name.capitalize()\n",
+        "last_name = last_name.capitalize()\n",
+        "\n",
+        "print(first_name)\n",
+        "print(last_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8G0Cnv70rY-y",
+        "outputId": "6cafba34-044c-4cae-9623-515267c6495a"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Niba\n",
+            "Khan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3: Uses f-strings to create a profile message: \"Profile: {First Last}, Age: {calculated age}, Username: {first initial + last name + birth year}\"*\n",
+        "\n",
+        "#Calculated Age\n",
+        "calculated_age:int = 2025 - birth_year\n",
+        "\n",
+        "username = f\"{first_name[0].lower()}{last_name.lower()}{birth_year}\"\n",
+        "print(username)\n",
+        "\n",
+        "profile_message = f\"Profile: {first_name} {last_name}, Age: {calculated_age}, Username: {username}\"\n",
+        "print(profile_message)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kec75mmJrnAS",
+        "outputId": "1c80b83a-ed42-4b5d-9246-fce26ffeb119"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nkhan2006\n",
+            "Profile: niba khan, Age: 19, Username: nkhan2006\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
